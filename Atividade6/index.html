@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Blog da dama</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body background="background.png">
+    <h1 align="center" color="white">Blog da Dama</h1>
+    <hr />
+    <br />
+    <div align="center">
+        A partida da vez se trata de um clássico entre os jogadores Tuca e José Carlos ocorrida no dia 19 de julho de 2022.
+        Tuca leva vantagem em número de vitórias. Mas no recorte recente, o Zé Carlos leva ampla vantagem,
+        a MAIOR RIVALIDADE de damas em território nacional.
+        Transmissões: 
+        <br/>
+        <a href="https://youtu.be/u1g9hPvqWz8">Cazé TV</a>
+        <br/>
+        <a href="https://youtu.be/INZR-Bbr1Vc">Video Oficial: </a>
+
+    </div>
+    <br />
+    <br />
+    <br />
+    <h2 align="center"> Deixe seu comentário</h2>
+    <form
+      method="POST"
+      action="http://localhost:8000/cgi-bin/server.py"
+      align="center"
+    >
+      <h3>Autor: </h3><br />
+      <input type="text" size="64" name="author" /><br /><br />
+      <h3>Mensagem </h3> <br />
+      <textarea rows="3" cols="64" name="message"></textarea><br /><br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpar Campos" />
+    </form>
+    <br/>
+  </body>
+</html>

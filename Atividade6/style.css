@@ -1,0 +1,26 @@
+h1{
+    color: white;
+    text-shadow: 0.01em 0.1em 0.05em #000000;
+}
+form{
+    color: white;
+}
+div{
+    color: white;
+    font-size: 28;
+    text-shadow: 0.1em 0.01em 0.05em #000000;
+}
+h2{
+    color: white;
+    text-shadow: 0.1em 0.1em 0.05em #000000;
+}
+h3{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 0.1em 0.1em 0.05em #000000;
+    
+}
+a{
+    text-shadow: none;
+}
