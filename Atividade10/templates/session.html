@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Count Page</title></head>
+<body>
+Hello, {{username}}! Your session will expire in {{remaining_time}}
+<br/>
+Contador de requisições Hidden: {{counter}}
+<br/>
+Contador de requisições Cookie: {{counter_cookie}}
+<form action="/" method="GET">
+<input type="hidden" name="counter"
+value={{counter}} />
+<input type="submit" value="Enviar" />
+</form>
+</body>
+</html>
