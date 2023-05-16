@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import React from "react";
+import { useState } from "react";
+
 
 function SearchBar({ filterText, onFilterTextChange }) {
   return (
