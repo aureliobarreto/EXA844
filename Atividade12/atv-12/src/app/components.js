@@ -27,6 +27,7 @@ function SearchBar({ filterText, onFilterTextChange }) {
             value={filterText}
             placeholder="Search..."
             onChange={(e) => onFilterTextChange(e.target.value)}
+            variant='flushed'
         />
         </form>
     );
