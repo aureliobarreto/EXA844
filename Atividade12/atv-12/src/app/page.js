@@ -1,10 +1,40 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+function SearchBar({ filterText, onFilterTextChange }) {
+  return (
+    <form>
+      <label>Procure uma mensagem:</label>
+      <input
+        type="text"
+        value={filterText}
+        placeholder="Search..."
+        onChange={(e) => onFilterTextChange(e.target.value)}
+      />
+    </form>
+  );
+}
+
+function FilterableMessageTable({ messages }) {
+  const [filterText, setFilterText] = useState("");
+
+  return (
+    <SearchBar filterText={filterText} onFilterTextChange={setFilterText} />
+  );
+}
+
 export default function Home() {
+  const [blogMessages, setBlogMessages] = useState([]);
+
+  fetch("https://...")
+    .then((response) => response.json())
+    .then((data) => {
+      setBlogMessages(data);
+    });
+
   return (
     <main className={styles.main}>
-      <h1>AAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+      <FilterableMessageTable messages={blogMessages} />
     </main>
-  )
+  );
 }
